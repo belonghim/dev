@@ -1,7 +1,7 @@
 echo "--> assemble refer script started !!"
 echo "--> mv /tmp/src/myweb /tmp/src/ROOT.war !!"
 mv /tmp/src/myweb /tmp/src/ROOT.war
-touch /deployments/ROOT.war.dodeploy
-echo "--> /deployments/ROOT.war.dodeploy file is touched !!"
+#touch /deployments/ROOT.war.dodeploy
+#echo "--> /deployments/ROOT.war.dodeploy file is touched !!"
 /usr/local/s2i/assemble
 exit $?
