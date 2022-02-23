@@ -9,6 +9,11 @@ out.println("<b>"+application.getSessionCookieConfig().getName()+"</b> : "+sessi
 en = session.getAttributeNames();
 while( en.hasMoreElements() ) {
   String att0 = (String)en.nextElement();
-  out.println("<br>Attribute " + att0 + " - " + session.getAttribute(att0)+" <br>");
+  out.println("Session Attribute : " + att0 + " - " + session.getAttribute(att0)+" <br>");
+}
+en = application.getAttributeNames();
+while( en.hasMoreElements() ) {
+  String att0 = (String)en.nextElement();
+  out.println("Context Attribute : " + att0 + " - " + session.getAttribute(att0)+" <br>");
 }
 %>
