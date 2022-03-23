@@ -5,6 +5,7 @@ mv /tmp/src/myweb /tmp/src/ROOT.war
 #echo "--> /deployments/ROOT.war.dodeploy file is touched !!"
 #echo "--> mv /tmp/src/gpki /home/jboss/gpki !!"
 #mv /tmp/src/gpki /home/jboss/gpki
-env 
+echo "$NB_USER $uid $user $home"
+cat $NSS_WRAPPER_PASSWD
 /usr/local/s2i/assemble
 exit $?
