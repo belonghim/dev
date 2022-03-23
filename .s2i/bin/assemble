@@ -3,7 +3,7 @@ echo "--> mv /tmp/src/myweb /tmp/src/ROOT.war !!"
 mv /tmp/src/myweb /tmp/src/ROOT.war
 #touch /deployments/ROOT.war.dodeploy
 #echo "--> /deployments/ROOT.war.dodeploy file is touched !!"
-echo "--> mv /tmp/src/gpki /home/jboss/gpki !!"
-mv /tmp/src/gpki /home/jboss/gpki
+#echo "--> mv /tmp/src/gpki /home/jboss/gpki !!"
+#mv /tmp/src/gpki /home/jboss/gpki
 /usr/local/s2i/assemble
 exit $?
